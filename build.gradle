@@ -44,11 +44,6 @@ dependencies {
     testCompile 'org.hamcrest:hamcrest-all:1.3'
 }
 
-task publish(type: Copy) {
-    from(libsDir)
-    into(publishDir)
-}
-
 jar {
     from sourceSets.main.allSource
 }
